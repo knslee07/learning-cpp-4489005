@@ -23,7 +23,7 @@ int main(){
     b = cow_purpose::meat;
 
     std::cout << "a = " << a << std::endl;
-    std::cout << "b = " << (int) b << std::endl;
+    std::cout << "int b = " << (int) b << std::endl;
     // cout does not work with a custom operand like cow_purpose
 
     std::cout << std::endl << std::endl;

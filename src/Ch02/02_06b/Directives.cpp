@@ -15,7 +15,7 @@ int main(){
     uint8_t small =37;
 #ifdef DEBUG
     std::cout << "[about to perform the addition] will be shown if DEBUG is defined" << std::endl;
-    //this is grayed out if cout is not defined.
+    //this is grayed out if DEBUG is not defined.
 #endif
     large +=small;
 

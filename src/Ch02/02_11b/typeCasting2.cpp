@@ -9,7 +9,7 @@ int main(){
     int fahrenheit= 100;
     int celsius;
 
-    celsius= (5/9) * (fahrenheit -21); //0?
+    celsius= (5/9) * (fahrenheit -21); //0? 5/9 is zero in int.
     std::cout << celsius << std::endl;
 
     celsius= ((float)5/9) * (fahrenheit -21);
