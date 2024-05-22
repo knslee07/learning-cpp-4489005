@@ -26,10 +26,10 @@ public:
         return name;
     }
     int get_age() {
-        return age
+        return age;
     }
     cow_purpose get_cow_purpose() {
-        return cow_purpose
+        return purpose;
     }
 
 private: 
@@ -40,12 +40,16 @@ private:
 };
 
 int main(){
-    cow my_cow;
-    my_cow.age = 5;
-    my_cow.name = "Betsy";
-    my_cow.purpose = cow_purpose::dairy;
-    std::cout << my_cow.name << " is a type-" << (int)my_cow.purpose << " cow." << std::endl;
-    std::cout << my_cow.name << " is " << my_cow.age << " years old." << std::endl;
+    cow1 my_cow1;
+    my_cow1.age = 5;
+    my_cow1.name = "Betsy";
+    my_cow1.purpose = cow_purpose::dairy;
+    std::cout << my_cow1.name << " is a type-" << (int)my_cow1.purpose << " cow." << std::endl;
+    std::cout << my_cow1.name << " is " << my_cow1.age << " years old." << std::endl;
+    
+    cow my_cow("Betty", 4, cow_purpose::meat);
+    std::cout << my_cow.get_name() << " is a type-" << (uint8_t)my_cow.get_cow_purpose() << " cow." << std::endl;
+    std::cout << my_cow.get_name() << " is " << my_cow.get_age() << " years old." << std::endl;
     
     std::cout << std::endl << std::endl;
     return (0);
