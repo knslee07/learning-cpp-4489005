@@ -25,7 +25,7 @@ int main(){
     std::cin >> id;
 
     float points = 0.0f, credits = 0.0f;
-    for (Grade& grd : grades)
+    for (Grade& grd : grades)   //used reference instead of auto x:
         if (grd.get_student_id() == id){
             float num_grd;          // float for the numeric grade
             switch (grd.get_grade()){
@@ -41,6 +41,7 @@ int main(){
                     break;
             };
             
+            //a different way to iterate til match
             int j=0;
             while (j < courses.size()  &&  courses[j].get_id() != grd.get_course_id())
                 j++;

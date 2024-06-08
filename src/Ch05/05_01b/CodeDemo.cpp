@@ -2,6 +2,9 @@
 // Exercise 05_01
 // Creating Functions, by Eduardo Corpeño 
 
+// This Chapter will revise the Ch. 4 Challenge code
+// to streamline it
+
 #include <iostream>
 #include <vector>
 #include "records.h"
